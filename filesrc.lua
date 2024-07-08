@@ -2951,9 +2951,9 @@ spawn(function()
                 if _G.BringMode == "Low" then
                     _G.BringMode = 300
                 elseif _G.BringMode == "Normal" then
-                    _G.BringMode = 375
+                    _G.BringMode = 350
                 elseif _G.BringMode == "Super Bring" then
-                    _G.BringMode = 450
+                    _G.BringMode = 400
                 end
             end)
         end
@@ -3006,10 +3006,10 @@ spawn(function()
     end)
 end)
 
-local AttackList = {"0", "0.1", "0.175", "0.2", "0.25", "0.3", "0.35", "0.4", "0.45", "0.5", "0.55", "0.6", "0.65", "0.7", "0.75", "0.8", "0.85", "0.9", "0.95", "0.1"}
+local AttackList = {"0.15", "0.175", "0.2"}
 M:AddDropdown({
 	Name = "FastAttack Delay",
-	Default = "0.5",
+	Default = "0.175",
 	Options = AttackList,
     Flag = "FastAttack Delay",
     Save = true,
@@ -3021,46 +3021,12 @@ spawn(function()
     while wait(.1) do
         if _G.FastAttackDelay then
             pcall(function()
-                if _G.FastAttackDelay == "0" then
-                    _G.FastAttackDelay = 0
-                elseif _G.FastAttackDelay == "0.1" then
-                    _G.FastAttackDelay = 0.1
+                if _G.FastAttackDelay == "0.15" then
+                    _G.FastAttackDelay = 0.15
                 elseif _G.FastAttackDelay == "0.175" then
                     _G.FastAttackDelay = 0.175
                 elseif _G.FastAttackDelay == "0.2" then
                     _G.FastAttackDelay = 0.2
-                elseif _G.FastAttackDelay == "0.25" then
-                    _G.FastAttackDelay = 0.25
-                elseif _G.FastAttackDelay == "0.3" then
-                    _G.FastAttackDelay = 0.3
-                elseif _G.FastAttackDelay == "0.35" then
-                    _G.FastAttackDelay = 0.35
-                elseif _G.FastAttackDelay == "0.4" then
-                    _G.FastAttackDelay = 0.5
-                elseif _G.FastAttackDelay == "0.45" then
-                    _G.FastAttackDelay = 0.45
-                elseif _G.FastAttackDelay == "0.5" then
-                    _G.FastAttackDelay = 0.5
-                elseif _G.FastAttackDelay == "0.55" then
-                    _G.FastAttackDelay = 0.55
-                elseif _G.FastAttackDelay == "0.6" then
-                    _G.FastAttackDelay = 0.6
-                elseif _G.FastAttackDelay == "0.65" then
-                    _G.FastAttackDelay = 0.65
-                elseif _G.FastAttackDelay == "0.7" then
-                    _G.FastAttackDelay = 0.7
-                elseif _G.FastAttackDelay == "0.75" then
-                    _G.FastAttackDelay = 0.75
-                elseif _G.FastAttackDelay == "0.8" then
-                    _G.FastAttackDelay = 0.8
-                elseif _G.FastAttackDelay == "0.85" then
-                    _G.FastAttackDelay = 0.85
-                elseif _G.FastAttackDelay == "0.9" then
-                    _G.FastAttackDelay = 0.9
-                elseif _G.FastAttackDelay == "0.95" then
-                    _G.FastAttackDelay = 0.95
-                elseif _G.FastAttackDelay == "1" then
-                    _G.FastAttackDelay = 1
                 end
             end)
         end
