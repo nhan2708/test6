@@ -2519,39 +2519,23 @@ spawn(function()
     end
 end)
 
-spawn(function() 
-    repeat
-        task.wait()
-    until game:IsLoaded()
-    repeat
-        task.wait()
-    until game.Players
-    repeat
-        task.wait()
-    until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
-    wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red>VTN chào ae<Color=/>"):Display()
-    wait(.5)
-end)
+--spawn(function() 
+ --   repeat
+ --       task.wait()
+  --  until game:IsLoaded()
+  --  repeat
+  --      task.wait()
+  --  until game.Players
+ --   repeat
+ --       task.wait()
+  --  until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
+  --  wait(1.5)
+  --  require(game.ReplicatedStorage.Notification).new("<Color=Red>VTN chào ae<Color=/>"):Display()
+   -- wait(.5)
+--end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "VTN", HidePremium = false, IntroText = "VTN⚜️", SaveConfig = true, ConfigFolder = "NightHub"})
-
-
-
-OrionLib:MakeNotification({
-    Name = "VTN",
-    Content = "Please Wait loading script...,Do not enable any function",
-    Image = "rbxassetid://8192162908",
-    Time = 5
-})
-wait(3)
-OrionLib:MakeNotification({
-    Name = "VTN",
-    Content = "đợi hub load config rồi mới xài nha",
-    Image = "rbxassetid://8192162908",
-    Time = 10
-})
 
 -------------Tab-----------------------
 
