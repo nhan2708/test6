@@ -2519,21 +2519,6 @@ spawn(function()
     end
 end)
 
---spawn(function() 
- --   repeat
- --       task.wait()
-  --  until game:IsLoaded()
-  --  repeat
-  --      task.wait()
-  --  until game.Players
- --   repeat
- --       task.wait()
-  --  until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
-  --  wait(1.5)
-  --  require(game.ReplicatedStorage.Notification).new("<Color=Red>VTN chào ae<Color=/>"):Display()
-   -- wait(.5)
---end)
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "VTN", HidePremium = false, IntroText = "VTN⚜️", SaveConfig = true, ConfigFolder = "NightHub"})
 
